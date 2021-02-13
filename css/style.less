@@ -302,6 +302,30 @@ h1, h2, h3, h4, h5, h6 {
     color: @grey;
 }
 
+.aboutus__block {
+    margin-top: 2.8rem;
+    margin-bottom: 5.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutus__block__content {
+    width: 55%;
+}
+
+.aboutus__block__title {
+    font-size: 18px;
+    line-height: 24px;
+    color: @black;
+}
+
+.aboutus__block__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: @grey;
+}
 
 /*============    ШРИФТЫ    ===========*/
 
@@ -427,6 +451,33 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
         margin: 0;
     }
+    .aboutus__wrapper {
+        margin-bottom: 4rem;
+    }
+    .aboutus__block {
+        justify-content: center;
+        margin: 3.5rem 0;
+        width: 100%;
+    }
+    .aboutus__block__image {
+        margin-bottom: 1.5rem;
+    }
+    .aboutus__block__image img {
+        width: 99%;
+    }
+    .aboutus__block__title {
+        font-size: 1.7rem;
+    }
+    .aboutus__block__description {
+        font-size: 1.6rem;
+    }
+    .aboutus__description {
+        font-size: 19px;
+    }
+    .aboutus .section-title {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
 }
 
 @media(min-width:481px) and (max-width:768px) {
@@ -524,6 +575,18 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0;
         margin-left: 3rem;
     }
+    .aboutus__wrapper {
+        margin-bottom: 4rem;
+    }
+    .aboutus__block {
+        margin: 3.5rem 0;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .aboutus__block__image {
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media(min-width:769px) and (max-width:992px) {
@@ -616,6 +679,18 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0;
         margin-left: 3rem;
     }
+    .aboutus__wrapper {
+        margin-bottom: 4rem;
+    }
+    .aboutus__block {
+        margin: 3.5rem 0;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .aboutus__block__image {
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media(min-width:993px) and (max-width:1200px) {
@@ -639,6 +714,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     .features__card__description {
         font-size: 1.4rem
+    }
+    .aboutus__block__title {
+        font-size: 1.7rem;
     }
 }
 
