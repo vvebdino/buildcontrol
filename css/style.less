@@ -97,6 +97,14 @@ h1, h2, h3, h4, h5, h6 {
     color: @black;
 }
 
+.span_yellow {
+    color: @black;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    margin-top: 2.8rem;
+    box-shadow: 0px -11px 0px 0px rgba(255, 208, 66, 1) inset;
+}
+
 /*============    ХЕДЕР    ===========*/
 .header {
     padding: 2.5rem;
@@ -253,14 +261,6 @@ h1, h2, h3, h4, h5, h6 {
     color: @grey;
 }
 
-.help__span {
-    color: @black;
-    font-size: 2rem;
-    line-height: 3.2rem;
-    margin-top: 2.8rem;
-    position: relative;
-    box-shadow: 0px -11px 0px 0px rgba(255, 208, 66, 1) inset;
-}
 
 /*============    КОМПАНИИ    ===========*/
 
@@ -316,24 +316,268 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .aboutus__block__title {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
     color: @black;
 }
 
 .aboutus__block__description {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     color: @grey;
+}
+
+/*============    ДОСТАВКА    ===========*/
+
+.delivery .container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.delivery__wrapper {
+    text-align: center;
+}
+
+.delivery__description {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: @grey;
+    max-width: 643px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.delivery__block {
+    width: 31%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.3rem;
+
+    &:nth-last-child(-n+3) {
+        margin-bottom: 0;
+    }
+}
+
+.delivery__block__content {
+    margin-left: 1.6rem;
+}
+
+.delivery__block__title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+.delivery__block__description {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: @grey;
+}
+
+.div__delivery__span {
+    text-align: center;
+}
+
+.delivery__span {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: @grey;
+}
+
+.delivery__span .span_yellow {
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+
+/*============    НАДЕЖНОСТЬ    ===========*/
+
+.reliability {
+    padding-top: 12rem;
+    padding-bottom: 14rem;
+    text-align: center;
+}
+
+.reliability__title {
+    padding-top: 2.5rem;
+    padding-right: 3rem;
+    max-width: 24rem;
+    margin-bottom: 1rem;
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 4rem;
+        height: 4rem;
+        background: url('../img/reliability/leave.svg') no-repeat right;
+    }
+}
+
+.reliability__description {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: @grey;
+    max-width: 857px;
+    margin: 0 auto;
+}
+
+.reliability__block {
+    margin-top: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.reliability__block__item {
+    width: 31%;
+    max-width: 333px;
+}
+
+.reliability__block__item__title {
+    font-size: 18px;
+    line-height: 24px;
+    color: @black;
+    margin-top: 1rem;
+}
+
+.reliability__block__item__description {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: @grey;
+}
+
+.reliability__block__grey {
+    margin-top: 6rem;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    background-color: #F6F8F9;
+}
+
+.reliability__block__grey__btn {
+    padding: 1.2rem;
+    max-width: 159px;
+    margin-left: 6rem;
+}
+
+.reliability__block__grey__text {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    margin-left: 2.4rem;
+}
+
+/*============    СЕЗОН    ===========*/
+
+.season {
+    padding: 14rem 0;
+    background-color: @black;
+}
+
+.season__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.season__content {
+    max-width: 50%;
+    margin-right: 5rem;
+    margin-left: 19rem;
+}
+
+.season__title {
+    text-align: left;
+    font-size: 32px;
+    line-height: 4.8rem;
+    color: @white;
+}
+
+.season__content__features {
+    margin-top: 4rem;
+    padding: 0;
+    list-style: none;
+}
+
+.season__content__feature {
+    padding-left: 4rem;
+    position: relative;
+
+    &:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: url('../img/dot.svg');
+    display: block;
+    color: @white;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    }
+}
+
+.season__content__feature__title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: @white;
+}
+
+.season__content__feature__text {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: @white;
+    opacity: 75%;
+}
+
+.season__content__buttons {
+    margin-top: 5rem;
+}
+.season__content__buttons .btn-white {
+    max-width: 16rem;
+    padding: 1.3rem 2.5rem;
+}
+.season__content__buttons .btn-black {
+    max-width: 15rem;
+    padding: 1.3rem 2.5rem;
+    border: 1px solid #DADEDF;
+    margin-left: 1.6rem;
+}
+
+.season__block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12rem;
+    text-align: center;
+    color: @white;
+}
+
+.season__block__item {
+    width: 31%;
+}
+
+.season__block__item__title {
+    display: block;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+.season__block__item__description {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    opacity: 75%;
 }
 
 /*============    ШРИФТЫ    ===========*/
 
-/*============    ШРИФТЫ    ===========*/
+/*============    ПОДВАЛ    ===========*/
 
-/*============    ШРИФТЫ    ===========*/
-
-/*============    ШРИФТЫ    ===========*/
+/*============    ПОДВАЛ    ===========*/
 
 /*============    ПОДВАЛ    ===========*/
 
@@ -478,6 +722,105 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 3rem;
         line-height: 4rem;
     }
+    .delivery .section-title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .delivery__description {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        max-width: 450px;
+    }
+    .delivery .container {
+        justify-content: center;
+        text-align: center;
+    }
+    .delivery__block {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .delivery__block__title {
+        margin-top: 1.5rem;
+        line-height: 2rem;
+    }
+    .div__delivery__span {
+        margin-top: 1.5rem;
+    }
+    .delivery__span {
+        font-size: 1.5rem;
+        line-height: 1.2rem;
+    }
+    .delivery__span .span_yellow {
+        font-size: 1.5rem;
+    }
+    .reliability {
+        padding-bottom: 7rem;
+    }
+    .reliability__description {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    .reliability__block {
+        justify-content: center;
+    }
+    .reliability__block__item {
+        width: 100%;
+        &:last-child {
+            margin-top: 2rem;
+        }
+    }
+    .reliability__block__grey {
+        margin-top: 3rem;
+        padding: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .reliability__block__grey__text {
+        margin: 1.5rem 0;
+        line-height: 2.2rem;
+    }
+    .reliability__block__grey__btn {
+        margin-left: 0;
+    }
+    .season {
+        padding: 6rem 0;
+    }
+    .season__title
+    .season__image {
+        margin-top: 5rem;
+        width: 100%;
+    }
+    .season__wrapper {
+        flex-wrap: wrap;
+    }
+    .season__content {
+        margin-left: 3rem;
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .season__block {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 8rem;
+    }
+    .season__block__item {
+        width: 100%;
+    }
+    .season__content__buttons {
+        margin: 5rem 0;
+    }
+    .season__content__buttons .btn-white {
+        max-width: 20rem;
+        margin: 0 auto;
+    }
+    .season__content__buttons .btn-black {
+        max-width: 20rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+
 }
 
 @media(min-width:481px) and (max-width:768px) {
@@ -587,6 +930,85 @@ h1, h2, h3, h4, h5, h6 {
     .aboutus__block__image {
         margin-bottom: 1.5rem;
     }
+    .delivery .section-title {
+        font-size: 2.7rem;
+        line-height: 3rem;
+    }
+    .delivery__description {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        max-width: 450px;
+    }
+    .delivery .container {
+        justify-content: center;
+        text-align: center;
+    }
+    .delivery__block {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .delivery__block__title {
+        margin-top: 1.5rem;
+        line-height: 2rem;
+    }
+    .div__delivery__span {
+        margin-top: 1.5rem;
+    }
+    .delivery__span {
+        font-size: 1.7rem;
+        line-height: 1.2rem;
+    }
+    .delivery__span .span_yellow {
+        font-size: 1.7rem;
+    }
+    .reliability {
+        padding-bottom: 7rem;
+    }
+    .reliability__block {
+        justify-content: center;
+    }
+    .reliability__block__item {
+        width: 100%;
+        &:last-child {
+            margin-top: 2rem;
+        }
+    }
+    .reliability__block__grey {
+        padding: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .reliability__block__grey__text {
+        margin: 1.5rem 0;
+        line-height: 2.2rem;
+    }
+    .reliability__block__grey__btn {
+        margin-left: 0;
+    }
+    .season {
+        padding: 10rem 0;
+    }
+    .season__image {
+        margin-top: 5rem;
+        width: 100%;
+    }
+    .season__wrapper {
+        flex-wrap: wrap;
+    }
+    .season__content {
+        margin-left: 3rem;
+        max-width: 100%;
+    }
+    .season__block {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 8rem;
+    }
+    .season__block__item {
+        width: 100%;
+    }
 }
 
 @media(min-width:769px) and (max-width:992px) {
@@ -691,6 +1113,29 @@ h1, h2, h3, h4, h5, h6 {
     .aboutus__block__image {
         margin-bottom: 1.5rem;
     }
+    .reliability {
+        padding-top: 7.5rem;
+        padding-bottom: 7rem;
+    }
+    .reliability__block__grey {
+        padding: 2rem;
+    }
+    .reliability__description {
+        font-size: 1.8rem;
+        line-height: 2.8rem
+    }
+    .reliability__block__grey__text {
+        line-height: 2.5rem;
+    }
+    .season {
+        padding: 10rem 0;
+    }
+    .season__image {
+        width: 40%;
+    }
+    .season__content {
+        margin-left: 3rem;
+    }
 }
 
 @media(min-width:993px) and (max-width:1200px) {
@@ -717,6 +1162,12 @@ h1, h2, h3, h4, h5, h6 {
     }
     .aboutus__block__title {
         font-size: 1.7rem;
+    }
+    .season__image {
+        width: 40%;
+    }
+    .season__content {
+        margin-left: 3rem;
     }
 }
 
