@@ -563,7 +563,7 @@ h1, h2, h3, h4, h5, h6 {
 .season__block__item__title {
     display: block;
     margin-top: 2rem;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     line-height: 2.4rem;
 }
 
@@ -573,7 +573,96 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 75%;
 }
 
-/*============    ШРИФТЫ    ===========*/
+/*============    НАЧАЛО РАБОТЫ    ===========*/
+
+.getstarted {
+    padding-top: 14.4rem;
+    padding-bottom: 9.6rem;
+}
+
+.getstarted .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.getstarted__left,
+.getstarted__right {
+    max-width: 50%;
+}
+
+.getstarted__left__description {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: @grey;
+    margin-bottom: 6rem;
+}
+
+.getstarted__right ol {
+    counter-reset: myCounter;
+}
+
+.getstarted__right li {
+    margin-top: 2rem;
+    list-style: none;
+    position: relative;
+
+    &:before {
+        counter-increment: myCounter;
+        content:counter(myCounter);
+        color: @grey;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid @grey;
+        display: inline-block;
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 3.5rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.getstarted__right__title {
+    padding-left: 8rem;
+    display: inline-block;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: @black;
+}
+
+.getstarted__right__description {
+    padding-left: 8rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: @grey;
+}
+
+.getstarted__right__buttons {
+    margin-top: 3rem;
+    margin-left: 4.4rem;
+}
+
+.getstarted__right__buttons .btn-black {
+    max-width: 166px;
+    padding: 1.3rem 2.5rem;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+}
+.getstarted__right__buttons .btn-white {
+    max-width: 149px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    padding: 1.3rem 2.5rem;
+    margin-left: 1.6rem;
+}
+
+
 
 /*============    ПОДВАЛ    ===========*/
 
@@ -820,7 +909,48 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0 auto;
         margin-top: 2rem;
     }
+    .getstarted {
+        padding-top: 8rem;
+    }
+    .getstarted .container {
+        flex-wrap: wrap;
+    }
+    .getstarted .section-title {
+        font-size: 2.7rem;
+        line-height: 3.5rem;
+    }
+    .getstarted__left__description {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        margin-bottom: 3rem;
+    }
+    .getstarted img {
+        width: 98%;
+    }
+    .getstarted__left,
+    .getstarted__right {
+        max-width: 100%;
+    }
+    .getstarted__left {
+        text-align: center;
+    }
+    .getstarted__right__buttons {
+        margin-left: 0;
+        text-align: center;
+    }
+    .getstarted__right ol {
+        padding: 0;
+    }
+    .getstarted__right__title,
+    .getstarted__right__description {
+        padding-left: 6rem;
+    }
 
+    .getstarted__right__buttons .btn-white {
+        max-width: 166px;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
 }
 
 @media(min-width:481px) and (max-width:768px) {
@@ -1009,6 +1139,29 @@ h1, h2, h3, h4, h5, h6 {
     .season__block__item {
         width: 100%;
     }
+    .getstarted {
+        padding-top: 8rem;
+    }
+    .getstarted .container {
+        flex-wrap: wrap;
+    }
+    .getstarted__left__description {
+        font-size: 1.9rem;
+    }
+    .getstarted__left,
+    .getstarted__right {
+        max-width: 100%;
+    }
+    .getstarted__left {
+        text-align: center;
+    }
+    .getstarted__right__buttons {
+        margin-left: 0;
+        text-align: center;
+    }
+    .getstarted__right ol {
+        padding: 0;
+    }
 }
 
 @media(min-width:769px) and (max-width:992px) {
@@ -1135,6 +1288,26 @@ h1, h2, h3, h4, h5, h6 {
     }
     .season__content {
         margin-left: 3rem;
+    }
+    .getstarted {
+        padding-top: 10rem;
+    }
+    .getstarted .container {
+        flex-wrap: wrap;
+    }
+    .getstarted__left__description {
+        font-size: 1.9rem;
+    }
+    .getstarted__left,
+    .getstarted__right {
+        max-width: 100%;
+    }
+    .getstarted__left {
+        text-align: center;
+    }
+    .getstarted__right__buttons {
+        margin-left: 0;
+        text-align: center;
     }
 }
 
