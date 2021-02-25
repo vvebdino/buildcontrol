@@ -32,6 +32,8 @@
 
 /*============    ОСНОВНЫЕ    ===========*/
 
+@import "slick.less";
+
 html {
     font-size: 10px;
 }
@@ -662,9 +664,116 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 1.6rem;
 }
 
+/*============    ПОЧЕМУ МЫ?    ===========*/
+
+.whywe {
+    padding-bottom: 15rem;
+}
+
+.whywe .container {
+    margin-top: 5rem;
+    margin-right: 0;
+    margin-left: 12rem;
+    max-width: 40%;
+}
+
+.whywe__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.whywe__header {
+    text-align: center;
+}
+
+.whywe__title {
+    display: block;
+    margin-bottom: 1.2rem;
+}
+
+.whywe__subtitle {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: @black;
+}
+
+.whywe__features__item {
+    display: flex;
+    margin-bottom: 2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.whywe__features__item img {
+    margin-right: 1.6em;
+    align-self: flex-start;
+}
+
+.whywe__features__item__title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: @black;
+}
+
+.whywe__features__item__text {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: @grey;
+}
+
+// настройки слайдера 
+
+.whywe__slider {
+    margin-top: 4rem;
+    margin-right: 7%;
+    max-width: 40%;
+    width: 614px;
+    height: 570px;
+    padding-top: 3rem;
+    padding-left: 8rem;
+    padding-right: 7rem;
+    background: #F6F8F9 url('../img/whywe/slider-bg.png') no-repeat 10% 10%;
+    border-radius: 5px;
+}
+
+// контент слайдера
+
+.whywe__slider__author__img {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+}
+
+.whywe__slider__view {
+    font-size: 3rem;
+    line-height: 4.8rem;
+    color: @black;
+}
+
+.whywe__slider__author {
+    display: flex;
+    align-items: center;
+}
+
+.whywe__slider__author__name {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin-left: 8px;
+    color: @black;
+}
+
+.whywe__slider__author__position {
+    display: block;
+    margin-left: 8px;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: @grey;
+}
 
 
-/*============    ПОДВАЛ    ===========*/
 
 /*============    ПОДВАЛ    ===========*/
 
