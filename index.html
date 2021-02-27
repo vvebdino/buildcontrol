@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,20 +18,20 @@
         <div class="container">
             <nav class="header__nav">
                 <ul class="header__nav__list">
-                    <li><a href="#" class="header__nav__list__item active">Главная</a></li>
-                    <li><a href="#" class="header__nav__list__item">О нас</a></li>
-                    <li><a href="#" class="header__nav__list__item">Продукция</a></li>
-                    <li><a href="#" class="header__nav__list__item">Процесс</a></li>
-                    <li><a href="#" class="header__nav__list__item">Надёжность</a></li>
-                    <li><a href="#" class="header__nav__list__item">Клиенты</a></li>
-                    <li><a href="#" class="header__nav__list__item">Связаться с нами</a></li>
+                    <li><a href="#hero" class="header__nav__list__item active">Главная</a></li>
+                    <li><a href="#aboutus" class="header__nav__list__item">О нас</a></li>
+                    <li><a href="#delivery" class="header__nav__list__item">Продукция</a></li>
+                    <li><a href="#getstarted" class="header__nav__list__item">Процесс</a></li>
+                    <li><a href="#reliability" class="header__nav__list__item">Надёжность</a></li>
+                    <li><a href="#whywe" class="header__nav__list__item">Клиенты</a></li>
+                    <li><a href="#footer" class="header__nav__list__item">Связаться с нами</a></li>
                 </ul>
             </nav>
         </div>
         <button class="btn header__btn btn-black">Заказать демо</button>
     </header>
 
-    <div class="hero">
+    <div class="hero" id="hero">
         <span class="hero__title">Умная доставка материалов для сложных строительных площадок</span>
         <button class="btn btn-black hero__btn hero__btn_order">Заказать демо</button>
         <button class="btn btn-white hero__btn hero__btn_more">Подробнее</button>
@@ -98,7 +98,7 @@
         </div>
     </div>
 
-    <div class="aboutus">
+    <div class="aboutus" id="aboutus">
         <div class="container">
             <div class="aboutus__wrapper">
                 <span class="section-title aboutus__title">Что такое СтройКонтроль?</span>
@@ -134,7 +134,7 @@
         </div>
     </div>
 
-    <section class="delivery">
+    <section class="delivery" id="delivery">
         <div class="delivery__wrapper">
                 <span class="delivery__title section-title">Доставка стала проще</span>
                 <p class="delivery__description">Мы позаботимся обо всех ваших различных поставках и их многочисленных специализированных требованиях к разгрузке.</p>
@@ -225,7 +225,7 @@
         <div class="div__delivery__span"><span class="delivery__span"><span class="span_yellow">и все остальные материалы,</span> которые поступают или покидают вашу площадку</span></div>
     </section>
 
-    <section class="reliability">
+    <section class="reliability" id="reliability">
         <span class="reliability__title section-title">Надёжность</span>
         <div class="container">
             <p class="reliability__description">Благодаря надёжному строительству выигрывают все - муниципальные органы выполняют свои обязанности перед гражданами, инвесторы получают сертификаты своих проектов, а генеральные подрядчики получают повышенную репутацию.</p>
@@ -302,7 +302,7 @@
 
     </div>
 
-    <div class="getstarted">
+    <div class="getstarted" id="getstarted">
         <div class="container">
             <div class="getstarted__left">
                 <span class="getstarted__left__title section-title">Как с нами работать</span>
@@ -336,7 +336,7 @@
         </div>
     </div>
 
-    <div class="whywe">
+    <div class="whywe" id="whywe">
         <div class="whywe__header">
                 <span class="whywe__title section-title">Почему нужно выбрать нас?</span>
                 <span class="whywe__subtitle">В строительной логистике всегда есть возможности для улучшения.</span>
@@ -406,7 +406,66 @@
                     </div>
         </div>
 
+        <div class="whywe__logotypes">
+            <div class="whywe__logotypes__item">
+                <img src="img/whywe/logotypes/1.png" alt="">
+                <span class="whywe__logotypes__startups">50 лучших инструментов ConTech</span>
+            </div>
+            <div class="whywe__logotypes__item">
+                <img src="img/whywe/logotypes/2.png" alt="">
+                <span class="whywe__logotypes__startups">25 лучших стартапов ConTech в ЕС</span>
+            </div>
+            <div class="whywe__logotypes__item">
+                <img src="img/whywe/logotypes/3.png" alt="">
+                <span class="whywe__logotypes__startups">50 лучших стартапов Global ConTech</span>
+            </div>
+            <div class="whywe__logotypes__item">
+                <img src="img/whywe/logotypes/4.png" alt="">
+                <span class="whywe__logotypes__startups">2018 - 50 лучших стартапов ЕС PropTech</span>
+            </div>
+        </div>
+
     </div>
+
+    <div class="logistics">
+        <div class="container">
+            <span class="logistics__title section-title">Готовы оптимизировать логистику доставки для вашего сложного проекта?</span>
+            <button class="btn btn-black btn-black_logistics">Заказать демо</button>
+            <button class="btn btn-white btn-white_logistics">Связаться с нами</button>
+        </div>
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__info">
+                <div class="footer__info__item">
+                    <img src="img/logo.svg" alt="logo: Стройконтроль" class="footer__info__item__logo">
+                    <span class="footer__info__item__span">г. Москва<br> Пресненская наб., 88, оф. 527</span>
+                    <span class="footer__info__item__address">info@stroycontrol.ru<br> +7 (945) 123-45-67</span>
+                    <a href="#" class="footer__info__item__social"><img src="img/facebook.svg" alt="social-icon: facebook"></a>
+                </div>
+                <div class="footer__info__item">
+                    <h4 class="footer__info__item__title">Наш продукт</h4>
+                    <a class="footer__info__item__link">Процесс</a>
+                    <a class="footer__info__item__link">Продукция</a>
+                </div>
+                <div class="footer__info__item">
+                    <h4 class="footer__info__item__title">Обслуживание</h4>
+                    <a class="footer__info__item__link">Клиенты</a>
+                    <a class="footer__info__item__link">Надёжность</a>
+                </div>
+                <div class="footer__info__item">
+                    <h4 class="footer__info__item__title">Компания</h4>
+                    <a class="footer__info__item__link">О нас</a>
+                    <a class="footer__info__item__link">Связаться с нами</a>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <span class="footer__copy__arr">© 2020 СтройКонтроль, Все права защищены.</span>
+                <a class="footer__copy__policy">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
 
 
     
