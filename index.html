@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>СтройКонтроль - Умная доставка материалов для сложных строительных площадок</title>
 
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
     
-    <header class="header">
-        <div class="header__logo">
+    <header class="header" id="header">
+        <a href="#hero" class="header__logo">
             <img src="img/logo.svg" alt="logo: СтройКонтроль" class="header__logo">
-        </div>
+        </a>
         <div class="container">
-            <nav class="header__nav">
+            <nav class="header__nav" id="nav">
                 <ul class="header__nav__list">
                     <li><a href="#hero" class="header__nav__list__item active">Главная</a></li>
                     <li><a href="#aboutus" class="header__nav__list__item">О нас</a></li>
@@ -27,14 +28,19 @@
                     <li><a href="#footer" class="header__nav__list__item">Связаться с нами</a></li>
                 </ul>
             </nav>
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                    <span class="nav-toggle__item">Menu</span>
+            </button>
+
         </div>
-        <button class="btn header__btn btn-black">Заказать демо</button>
+        <button class="btn header__btn btn-black" data-modal="#modal__сonnect">Заказать демо</button>
     </header>
 
     <div class="hero" id="hero">
-        <span class="hero__title">Умная доставка материалов для сложных строительных площадок</span>
-        <button class="btn btn-black hero__btn hero__btn_order">Заказать демо</button>
-        <button class="btn btn-white hero__btn hero__btn_more">Подробнее</button>
+        <span class="hero__title wow fadeInLeft" data-wow-delay="0.2s">Умная доставка материалов для сложных строительных площадок</span>
+        <button class="btn btn-black hero__btn hero__btn_order wow fadeInUp" data-wow-delay="0.4s" data-modal="#modal__сonnect">Заказать демо</button>
+        <button class="btn btn-white hero__btn hero__btn_more wow fadeInUp" data-wow-delay="0.6s" data-modal="#modal__сonnect">Подробнее</button>
         <div class="hero__images">
             <img src="img/hero-city.png" alt="image: city">
             <img src="img/hero-cars.png" alt="image: cars" class="hero__images_cars">
@@ -43,17 +49,17 @@
 
     <section class="features">
         <div class="container">
-            <div class="features__card">
+            <div class="features__card wow bounceInDown" data-wow-delay="0.2s">
                 <img src="img/features/features-1.svg" alt="Повышение эффективности">
                 <h3 class="features__card__title">Повышение эффективности</h3>
                 <p class="features__card__description">Эффективные проекты стоят дешевле и завершаются в срок.</p>
             </div>
-            <div class="features__card">
+            <div class="features__card wow bounceInDown" data-wow-delay="0.3s">
                 <img src="img/features/features-2.svg" alt="Снижение потерь">
                 <h3 class="features__card__title">Снижение потерь</h3>
                 <p class="features__card__description">Тщательно отслеживайте движение стройматериалов, чтобы избежать краж и повреждений.</p>
             </div>
-            <div class="features__card">
+            <div class="features__card wow bounceInDown" data-wow-delay="0.4s">
                 <img src="img/features/features-3.svg" alt="Повышение безопасности">
                 <h3 class="features__card__title">Повышение безопасности</h3>
                 <p class="features__card__description">Обеспечьте здоровье и благополучие людей, работающих на вашей площадке.</p>
@@ -64,9 +70,9 @@
     <div class="chaos">
         <div class="container">
             <span class="chaos__title section-title">Строительство - это хаос</span>
-            <p class="chaos__description">Хаос может быть удивительной творческой силой, воздвигающая новые здания из пыли. Хаос вызывает несчастные случаи, задержки и потери. Он вводит проекты в стресс и разочарование. Это означает, что вы действительно не контролируете ситуацию.</p>
+            <p class="chaos__description wow fadeInLeft" data-wow-delay="0.2s">Хаос может быть удивительной творческой силой, воздвигающая новые здания из пыли. Хаос вызывает несчастные случаи, задержки и потери. Он вводит проекты в стресс и разочарование. Это означает, что вы действительно не контролируете ситуацию.</p>
             <img src="img/chaos.png" alt="image: chaos" class="chaos__image">
-            <span class="section-title chaos__title_2">Пора навести порядок на вашей стройплощадке и взять под контроль свой проект</span>
+            <span class="section-title chaos__title_2 wow fadeInLeft" data-wow-delay="0.2s">Пора навести порядок на вашей стройплощадке и взять под контроль свой проект</span>
         </div>
     </div>
 
@@ -74,10 +80,10 @@
         <div class="container">
             <div class="help__left">
                 <span class="section-title help__title">Мы заботимся о доставке на стройплощадку и о людях, которые на них рассчитывают</span>
-                <p class="help__description">Мы знаем всё о гордости от сияющего нового здания. Нам также известно всё о разочаровании от попыток завершить проект в срок и в рамках бюджета.</p>
+                <p class="help__description wow fadeInLeft" data-wow-delay="0.2s">Мы знаем всё о гордости от сияющего нового здания. Нам также известно всё о разочаровании от попыток завершить проект в срок и в рамках бюджета.</p>
                 <span class="help__span span_yellow">Мы здесь, чтобы помочь.</span>
             </div>
-            <div class="help__right">
+            <div class="help__right wow fadeInRight" data-wow-delay="0.3s">
                 <img src="img/help.png" alt="image: help" class="help__img">
             </div>
         </div>
@@ -86,12 +92,12 @@
     <div class="companies">
         <div class="container">
             <div class="companies__wrapper">
-                <div><img src="img/companies/1.jpg" alt="" class="companies__image"></div>
-                <div><img src="img/companies/2.jpg" alt="" class="companies__image"></div>
-                <div><img src="img/companies/3.jpg" alt="" class="companies__image"></div>
-                <div><img src="img/companies/4.jpg" alt="" class="companies__image"></div>
-                <div><img src="img/companies/5.jpg" alt="" class="companies__image"></div>
-                <div class="companies__img">
+                <div class="wow fadeInDown" data-wow-delay="0.1s"><img src="img/companies/1.jpg" alt="" class="companies__image"></div>
+                <div class="wow fadeInDown" data-wow-delay="0.2s"><img src="img/companies/2.jpg" alt="" class="companies__image"></div>
+                <div class="wow fadeInDown" data-wow-delay="0.3s"><img src="img/companies/3.jpg" alt="" class="companies__image"></div>
+                <div class="wow fadeInDown" data-wow-delay="0.4s"><img src="img/companies/4.jpg" alt="" class="companies__image"></div>
+                <div class="wow fadeInDown" data-wow-delay="0.5s"><img src="img/companies/5.jpg" alt="" class="companies__image"></div>
+                <div class="companies__img wow fadeInUp" data-wow-delay="0.7s">
                     <img src="img/companies/6.jpg" alt="SKANSKA">
                 </div>
             </div>
@@ -102,32 +108,32 @@
         <div class="container">
             <div class="aboutus__wrapper">
                 <span class="section-title aboutus__title">Что такое СтройКонтроль?</span>
-                <p class="aboutus__description">СтройКонтроль - это интеллектуальная система управления доставкой, предоставляющая информацию и контроль материалов на сложных строительных площадках в режиме реального времени.</p>
+                <p class="aboutus__description wow fadeInUp" data-wow-delay="0.2s">СтройКонтроль - это интеллектуальная система управления доставкой, предоставляющая информацию и контроль материалов на сложных строительных площадках в режиме реального времени.</p>
             </div>
             <div class="aboutus__block">
-                <div class="aboutus__block__content">
+                <div class="aboutus__block__content wow fadeInLeft" data-wow-delay="0.1s">
                     <span class="aboutus__block__title">Отслеживайте доставку по всей цепочке поставок</span>
                     <p class="aboutus__block__description">От поставщика до субподрядчика - вы всегда знаете, где находятся ваши материалы, благодаря чему обычные отходы уходят в прошлое и сокращаются несчастные случаи на месте.</p>
                 </div>
-                <div class="aboutus__block__image">
+                <div class="aboutus__block__image wow fadeInRight" data-wow-delay="0.2s">
                     <img src="img/aboutus/1.png" alt="Отслеживайте доставку по всей цепочке поставок">
                 </div>
             </div>
             <div class="aboutus__block">
-                <div class="aboutus__block__image">
+                <div class="aboutus__block__image wow fadeInLeft" data-wow-delay="0.3s">
                     <img src="img/aboutus/2.png" alt="Оптимизируйте и контролируйте свое прибытие на место">
                 </div>
-                <div class="aboutus__block__content">
+                <div class="aboutus__block__content wow fadeInRight" data-wow-delay="0.4s">
                     <span class="aboutus__block__title">Оптимизируйте и контролируйте свое прибытие на место</span>
                     <p class="aboutus__block__description">Транспортные средства доставки прибывают в фиксированные промежутки времени в заранее назначенные отсеки, где разгрузочное оборудование готово и ждет их.</p>
                 </div>
             </div>
             <div class="aboutus__block">
-                <div class="aboutus__block__content">
+                <div class="aboutus__block__content wow fadeInLeft" data-wow-delay="0.5s">
                     <span class="aboutus__block__title">Возьмите под контроль данные в режиме реального времени</span>
                     <p class="aboutus__block__description">Интеллектуальная отчетность дает вам возможность принимать решения в зависимости от того, как обстоят дела в данный момент. Больше никаких ручных отчетов по заливке бетона или ежемесячной проверки 10.000 накладных со счетами, все это доступно онлайн без каких-либо усилий.</p>
                 </div>
-                <div class="aboutus__block__image">
+                <div class="aboutus__block__image wow fadeInRight" data-wow-delay="0.6s">
                     <img src="img/aboutus/3.png" alt="Возьмите под контроль данные в режиме реального времени">
                 </div>
             </div>
@@ -137,10 +143,10 @@
     <section class="delivery" id="delivery">
         <div class="delivery__wrapper">
                 <span class="delivery__title section-title">Доставка стала проще</span>
-                <p class="delivery__description">Мы позаботимся обо всех ваших различных поставках и их многочисленных специализированных требованиях к разгрузке.</p>
+                <p class="delivery__description wow fadeInLeft" data-wow-delay="0.2s">Мы позаботимся обо всех ваших различных поставках и их многочисленных специализированных требованиях к разгрузке.</p>
         </div>
         <div class="container">
-                <div class="delivery__block">
+                <div class="delivery__block wow zoomIn" data-wow-delay="0.1s">
                     <div class="delivery__block__img">
                         <img src="img/delivery/1.svg" alt="Бетон">
                     </div>
@@ -149,7 +155,7 @@
                         <p class="delivery__block__description">Поставки бетона точно планируются, а его состояние контролируется, что обеспечивает максимально возможное время для установки.</p>
                     </div>
                 </div>
-                <div class="delivery__block">
+                <div class="delivery__block wow zoomIn" data-wow-delay="0.2s">
                     <div class="delivery__block__img">
                         <img src="img/delivery/2.svg" alt="Утилизация отходов">
                     </div>
@@ -158,7 +164,7 @@
                         <p class="delivery__block__description">Отходы контролируются и сортируются, а заполненность контейнеров отслеживается в цифровом виде.</p>
                     </div>
                 </div>
-                <div class="delivery__block">
+                <div class="delivery__block wow zoomIn" data-wow-delay="0.3s">
                     <div class="delivery__block__img">
                         <img src="img/delivery/3.svg" alt="Опалубка">
                     </div>
@@ -167,7 +173,7 @@
                         <p class="delivery__block__description">Вся опалубка отслеживается от прибытия до отправления, а ее состояние контролируется, что сводит к минимуму потери и повреждения.</p>
                     </div>
                 </div>
-                <div class="delivery__block">
+                <div class="delivery__block wow zoomIn" data-wow-delay="0.4s">
                     <div class="delivery__block__img">
                         <img src="img/delivery/4.svg" alt="Сборные панели">
                     </div>
@@ -176,7 +182,7 @@
                         <p class="delivery__block__description">Сборные панели прибывают по очереди, их хранение на месте отслеживается, а их установка планируется и контролируется.</p>
                     </div>
                 </div>
-                <div class="delivery__block">
+                <div class="delivery__block wow zoomIn" data-wow-delay="0.5s">
                     <div class="delivery__block__img">
                         <img src="img/delivery/5.svg" alt="Фасады">
                     </div>
@@ -185,7 +191,7 @@
                         <p class="delivery__block__description">Элементы фасада поступают последовательно, их сборка контролируется, а перемещение отслеживается.</p>
                     </div>
                 </div>
-                <div class="delivery__block">
+                <div class="delivery__block wow zoomIn" data-wow-delay="0.6s">
                     <div class="delivery__block__img">
                         <img src="img/delivery/6.svg" alt="Отделка">
                     </div>
@@ -194,7 +200,7 @@
                         <p class="delivery__block__description">Материалы поступают точно в срок, маркируются и детально отслеживаются для установки.</p>
                     </div>
                 </div>
-                <div class="delivery__block">
+                <div class="delivery__block wow zoomIn" data-wow-delay="0.7s">
                     <div class="delivery__block__img">
                         <img src="img/delivery/7.svg" alt="Строительные леса">
                     </div>
@@ -203,7 +209,7 @@
                         <p class="delivery__block__description">Строительные леса отслеживаются от получения до хранения, использования и возврата, поэтому всегда ясно, что на месте и где.</p>
                     </div>
                 </div>
-                <div class="delivery__block">
+                <div class="delivery__block wow zoomIn" data-wow-delay="0.8s">
                     <div class="delivery__block__img">
                         <img src="img/delivery/8.svg" alt="Оборудование">
                     </div>
@@ -212,7 +218,7 @@
                         <p class="delivery__block__description">Оборудование и операторы гарантированно доступны в случае необходимости, а их рабочее состояние отслеживается.</p>
                     </div>
                 </div>
-                <div class="delivery__block">
+                <div class="delivery__block wow zoomIn" data-wow-delay="0.9s">
                     <div class="delivery__block__img">
                         <img src="img/delivery/9.svg" alt="Электрика и сантехника">
                     </div>
@@ -228,19 +234,19 @@
     <section class="reliability" id="reliability">
         <span class="reliability__title section-title">Надёжность</span>
         <div class="container">
-            <p class="reliability__description">Благодаря надёжному строительству выигрывают все - муниципальные органы выполняют свои обязанности перед гражданами, инвесторы получают сертификаты своих проектов, а генеральные подрядчики получают повышенную репутацию.</p>
+            <p class="reliability__description wow fadeInLeft" data-wow-delay="0.2s">Благодаря надёжному строительству выигрывают все - муниципальные органы выполняют свои обязанности перед гражданами, инвесторы получают сертификаты своих проектов, а генеральные подрядчики получают повышенную репутацию.</p>
             <div class="reliability__block">
-                <div class="reliability__block__item">
+                <div class="reliability__block__item wow bounceInUp" data-wow-delay="0.3s">
                     <img src="img/reliability/1.svg" alt="Сниженное загрязнение">
                     <h4 class="reliability__block__item__title">Сниженное загрязнение</h4>
                     <p class="reliability__block__item__description">При оптимизации логистики требуется меньше поездок, что приводит к снижению выбросов CO2. Выбрасываемый CO2 контролируется, что позволяет ставить цели и вносить ощутимые улучшения.</p>
                 </div>
-                <div class="reliability__block__item">
+                <div class="reliability__block__item wow bounceInUp" data-wow-delay="0.5s">
                     <img src="img/reliability/2.svg" alt="Улучшенное управление отходами">
                     <h4 class="reliability__block__item__title">Улучшенное управление отходами</h4>
                     <p class="reliability__block__item__description">Упрощается сортировка отходов, автоматизируется утилизация отходов, а поврежденные материалы при необходимости используются повторно, что снижает затраты и стимулирует переработку и повторное использование.</p>
                 </div>
-                <div class="reliability__block__item">
+                <div class="reliability__block__item wow bounceInUp" data-wow-delay="0.7s">
                     <img src="img/reliability/3.svg" alt="Улучшенное влияние на общество">
                     <h4 class="reliability__block__item__title">Улучшенное влияние на общество</h4>
                     <p class="reliability__block__item__description">Уменьшаются проблемы с дорожным движением и шумовое загрязнение, что улучшает жизнь местного сообщества. Улучшенное обращение с материалами и хранение означает, что рабочие также лучше защищены.</p>
@@ -249,7 +255,7 @@
             <div class="reliability__block__grey">
                 <img src="img/reliability/hands.svg" alt="hands">
                 <span class="reliability__block__grey__text"><b>Надёжная конструкция</b> СтройКонтроль входит в стандартную комплектацию.</span>
-                <button class="btn btn-white reliability__block__grey__btn">Подробнее</button>
+                <button class="btn btn-white reliability__block__grey__btn" data-modal="#modal__сonnect">Подробнее</button>
             </div>
         </div>
     </section>
@@ -273,8 +279,8 @@
                     </li>
                 </ul>
                 <div class="season__content__buttons">
-                    <button class="btn btn-white">Заказать демо</button>
-                    <button class="btn btn-black">Подробнее</button>
+                    <button class="btn btn-white" data-modal="#modal__сonnect">Заказать демо</button>
+                    <button class="btn btn-black" data-modal="#modal__сonnect">Подробнее</button>
                 </div>
             </div>
                 <div class="season__image">
@@ -283,17 +289,17 @@
             </div>
 
         <div class="container season__block">
-            <div class="season__block__item">
+            <div class="season__block__item wow fadeInUp" data-wow-delay="0.2s">
                 <img src="img/season/1.svg" alt="Привлечение субподрядчика">
                 <span class="season__block__item__title">Привлечение субподрядчика</span>
                 <p class="season__block__item__description">Для выполнения этой работы вам понадобятся ваши субподрядчики. У нас есть проверенный и надежный процесс для этого.</p>
             </div>
-            <div class="season__block__item">
+            <div class="season__block__item wow fadeInUp" data-wow-delay="0.4s">
                 <img src="img/season/2.svg" alt="Привлечены ключевые поставщики">
                 <span class="season__block__item__title">Привлечены ключевые поставщики</span>
                 <p class="season__block__item__description">У нас уже есть ключевые поставщики, использующие программное обеспечение, что обеспечивает еще больший контроль и прозрачность информации.</p>
             </div>
-            <div class="season__block__item">
+            <div class="season__block__item wow fadeInUp" data-wow-delay="0.6s">
                 <img src="img/season/3.svg" alt="100% соответствие">
                 <span class="season__block__item__title">100% соответствие</span>
                 <p class="season__block__item__description">У нас есть безупречный список обеспечения соответствия требованиям, которые необходимы вам для успешного выполнения проекта с помощью СтройКонтроль.</p>
@@ -306,31 +312,31 @@
         <div class="container">
             <div class="getstarted__left">
                 <span class="getstarted__left__title section-title">Как с нами работать</span>
-                <p class="getstarted__left__description">Начать работу со СтройКонтроль легко, достаточно заказать демо-версию.</p>
+                <p class="getstarted__left__description wow fadeInLeft" data-wow-delay="0.2s">Начать работу со СтройКонтроль легко, достаточно заказать демо-версию.</p>
                 <img src="img/work-img.png" alt="work-img">
             </div>
             <div class="getstarted__right">
                 <ol>
-                    <li>
+                    <li class="wow zoomInRight" data-wow-delay="0.4s">
                         <span class="getstarted__right__title">Заказать демо</span>
                         <p class="getstarted__right__description">Вы увидите презентацию, в которой подробно объясняется, как работает СтройКонтроль для решения задач строительной логистики в таких сложных проектах, как ваш.</p>
                     </li>
-                    <li>
+                    <li class="wow zoomInRight" data-wow-delay="0.6s">
                         <span class="getstarted__right__title">Согласование сделки</span>
                         <p class="getstarted__right__description">Мы обсудим ваш строительный проект и предложим реализацию СтройКонтроль, которая идеально соответствует вашим потребностям и будет иметь для вас ценность.</p>
                     </li>
-                    <li>
+                    <li class="wow zoomInRight" data-wow-delay="0.8s">
                         <span class="getstarted__right__title">Подготовка</span>
                         <p class="getstarted__right__description">Мы полностью обучаем вашу команду тому, как использовать систему, с помощью онлайн-видеоуроков и обеспечиваем постоянную всестороннюю поддержку.</p>
                     </li>
-                    <li>
+                    <li class="wow zoomInRight" data-wow-delay="1s">
                         <span class="getstarted__right__title">Внедрение и интеграция</span>
                         <p class="getstarted__right__description">Мы настраиваем программное обеспечение так, чтобы оно точно моделировало вашу площадку, а затем помогаем вам интегрировать его с программным обеспечением Business Intelligence для получения новых мощных аналитических данных.</p>
                     </li>
                 </ol>
                 <div class="getstarted__right__buttons">
-                    <button class="btn btn-black">Заказать демо</button>
-                    <button class="btn btn-white">Подробнее</button>
+                    <button class="btn btn-black" data-modal="#modal__сonnect">Заказать демо</button>
+                    <button class="btn btn-white" data-modal="#modal__сonnect">Подробнее</button>
                 </div>
             </div>
         </div>
@@ -344,28 +350,28 @@
         <div class="whywe__wrapper">
             <div class="container">
                 <div class="whywe__features">
-                    <div class="whywe__features__item">
+                    <div class="whywe__features__item wow fadeInLeft" data-wow-delay="0.2s">
                         <img src="img/whywe/1.svg" alt="Отмеченное наградами ПО">
                         <div>
                             <span class="whywe__features__item__title">Отмеченное наградами ПО</span>
                             <p class="whywe__features__item__text">Всемирно известное программное обеспечение, признанное государственными учреждениями, инновационными группами и техническими организациями</p>
                         </div>
                     </div>
-                    <div class="whywe__features__item">
+                    <div class="whywe__features__item wow fadeInLeft" data-wow-delay="0.4s">
                         <img src="img/whywe/2.svg" alt="Большой потенциал">
                         <div>
                             <span class="whywe__features__item__title">Большой потенциал</span>
                             <p class="whywe__features__item__text">Входит в топ-25 самых многообещающих стартапов ConTech по версии Cemex Ventures, Moscow Consulting Group, BuiltWorld и PwC</p>
                         </div>
                     </div>
-                    <div class="whywe__features__item">
+                    <div class="whywe__features__item wow fadeInLeft" data-wow-delay="0.6s">
                         <img src="img/whywe/3.svg" alt="Выбор лидеров рынка">
                         <div>
                             <span class="whywe__features__item__title">Выбор лидеров рынка</span>
                             <p class="whywe__features__item__text">Рекомендуемый поставщик технологий для 3 из 10 ведущих генеральных подрядчиков в Европе</p>
                         </div>
                     </div>
-                    <div class="whywe__features__item">
+                    <div class="whywe__features__item wow fadeInLeft" data-wow-delay="0.8s">
                         <img src="img/whywe/4.svg" alt="Устойчивое развитие и безопасность">
                         <div>
                             <span class="whywe__features__item__title">Устойчивое развитие и безопасность</span>
@@ -407,19 +413,19 @@
         </div>
 
         <div class="whywe__logotypes">
-            <div class="whywe__logotypes__item">
+            <div class="whywe__logotypes__item wow fadeInDown" data-wow-delay="0.1s">
                 <img src="img/whywe/logotypes/1.png" alt="">
                 <span class="whywe__logotypes__startups">50 лучших инструментов ConTech</span>
             </div>
-            <div class="whywe__logotypes__item">
+            <div class="whywe__logotypes__item wow fadeInDown" data-wow-delay="0.2s">
                 <img src="img/whywe/logotypes/2.png" alt="">
                 <span class="whywe__logotypes__startups">25 лучших стартапов ConTech в ЕС</span>
             </div>
-            <div class="whywe__logotypes__item">
+            <div class="whywe__logotypes__item wow fadeInDown" data-wow-delay="0.3s">
                 <img src="img/whywe/logotypes/3.png" alt="">
                 <span class="whywe__logotypes__startups">50 лучших стартапов Global ConTech</span>
             </div>
-            <div class="whywe__logotypes__item">
+            <div class="whywe__logotypes__item wow fadeInUp" data-wow-delay="0.4s">
                 <img src="img/whywe/logotypes/4.png" alt="">
                 <span class="whywe__logotypes__startups">2018 - 50 лучших стартапов ЕС PropTech</span>
             </div>
@@ -430,31 +436,31 @@
     <div class="logistics">
         <div class="container">
             <span class="logistics__title section-title">Готовы оптимизировать логистику доставки для вашего сложного проекта?</span>
-            <button class="btn btn-black btn-black_logistics">Заказать демо</button>
-            <button class="btn btn-white btn-white_logistics">Связаться с нами</button>
+            <button class="btn btn-black btn-black_logistics" data-modal="#modal__сonnect">Заказать демо</button>
+            <a href="#footer" class="btn btn-white btn-white_logistics">Связаться с нами</a>
         </div>
     </div>
 
     <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__info">
-                <div class="footer__info__item">
-                    <img src="img/logo.svg" alt="logo: Стройконтроль" class="footer__info__item__logo">
+                <div class="footer__info__item wow fadeInDown" data-wow-delay="0.2s">
+                    <a href="#hero" class="footer__info__item__logo"><img src="img/logo.svg" alt="logo: Стройконтроль" class="footer__info__item__logo"></a>
                     <span class="footer__info__item__span">г. Москва<br> Пресненская наб., 88, оф. 527</span>
                     <span class="footer__info__item__address">info@stroycontrol.ru<br> +7 (945) 123-45-67</span>
                     <a href="#" class="footer__info__item__social"><img src="img/facebook.svg" alt="social-icon: facebook"></a>
                 </div>
-                <div class="footer__info__item">
+                <div class="footer__info__item wow fadeInDown" data-wow-delay="0.4s">
                     <h4 class="footer__info__item__title">Наш продукт</h4>
                     <a class="footer__info__item__link">Процесс</a>
                     <a class="footer__info__item__link">Продукция</a>
                 </div>
-                <div class="footer__info__item">
+                <div class="footer__info__item wow fadeInDown" data-wow-delay="0.6s">
                     <h4 class="footer__info__item__title">Обслуживание</h4>
                     <a class="footer__info__item__link">Клиенты</a>
                     <a class="footer__info__item__link">Надёжность</a>
                 </div>
-                <div class="footer__info__item">
+                <div class="footer__info__item wow fadeInDown" data-wow-delay="0.8s">
                     <h4 class="footer__info__item__title">Компания</h4>
                     <a class="footer__info__item__link">О нас</a>
                     <a class="footer__info__item__link">Связаться с нами</a>
@@ -462,16 +468,60 @@
             </div>
             <div class="footer__copy">
                 <span class="footer__copy__arr">© 2020 СтройКонтроль, Все права защищены.</span>
-                <a class="footer__copy__policy">Политика конфиденциальности</a>
+                <a href="#" class="footer__copy__policy" data-modal="#modal_policy">Политика конфиденциальности</a>
             </div>
         </div>
     </footer>
 
 
+    <div id="modal_policy" class="modal">
+        <div class="modal__dialog modal__dialog_policy">
+                <button type="button" class="modal__close" data-close="">&#10006;</button>
+                <div class="modal__policy">
+                    <h4 class="modal__policy__title">Политика конфиденциальности</h4>
+                    <p>Мы стремимся уважать информацию личного характера, касающуюся посетителей нашего сайта. В настоящей Политике конфиденциальности разъясняются некоторые из мер, которые мы предпринимаем для защиты Вашей частной жизни. Конфиденциальность информации личного характера "Информация личного характера" обозначает любую информацию, которая может быть использована для идентификации личности, например, фамилия или адрес электронной почты. Использование информации частного характера. Информация личного характера, полученная через наш сайт, используется нами, среди прочего, для целей регистрирования пользователей, для поддержки работы и совершенствования нашего сайта, отслеживания политики и статистики пользования сайтом, а также в целях, разрешенных вами.</p>
+                    <h5>Раскрытие информации частного характера.</h5>
+                    <p>Мы нанимаем другие компании или связаны с компаниями, которые по нашему поручению предоставляют услуги, такие как обработка и доставка информации, размещение информации на данном сайте, доставка содержания и услуг, предоставляемых настоящим сайтом, выполнение статистического анализа. Чтобы эти компании могли предоставлять эти услуги, мы можем сообщать им информацию личного характера, однако им будет разрешено получать только ту информацию личного характера, которая необходима им для предоставления услуг. Они обязаны соблюдать конфиденциальность этой информации, и им запрещено использовать ее в иных целях. Мы можем использовать или раскрывать Ваши личные данные и по иным причинам, в том числе, если мы считаем, что это необходимо в целях выполнения требований закона или решений суда, для защиты наших прав или собственности, защиты личной безопасности пользователей нашего сайта или представителей широкой общественности, в целях расследования или принятия мер в отношении незаконной или предполагаемой незаконной деятельности, в связи с корпоративными сделками, такими как разукрупнение, слияние, консолидация, продажа активов или в маловероятном случае банкротства, или в иных целях в соответствии с Вашим согласием. Мы не будем продавать, предоставлять на правах аренды или лизинга наши списки пользователей с адресами электронной почты третьим сторонам.</p>
+                    <h5>Доступ к информации личного характера</h5>
+                    <p>Если после предоставления информации на данный сайт, Вы решите, что Вы не хотите, чтобы Ваша персональная информация использовалась в каких-либо целях, связавшись с нами по следующему адресу: info@showmanacademy.ru Мы можем собирать информацию неличного характера о Вашем посещении сайта, в том числе просматриваемые вами страницы, выбираемые вами ссылки, а также другие действия в связи с Вашим использованием нашего сайта. Кроме того, мы можем собирать определенную стандартную информацию, которую Ваш браузер направляет на любой посещаемый вами сайт, такую как Ваш IP-адрес, тип браузера и язык, время, проведенное на сайте, и адрес соответствующего веб-сайта.Использование закладок (cookies) Файл cookie - это небольшой текстовый файл, размещаемый на Вашем твердом диске нашим сервером. Cookies содержат информацию, которая позже может быть нами прочитана. Никакие данные, собранные нами таким путем, не могут быть использованы для идентификации посетителя сайта. Не могут cookies использоваться и для запуска программ или для заражения Вашего компьютера вирусами. Мы используем cookies в целях контроля использования нашего сайта, сбора информации неличного характера о наших пользователях, сохранения Ваших предпочтений и другой информации на Вашем компьютере с тем, чтобы сэкономить Ваше время за счет снятия необходимости многократно вводить одну и ту же информацию, а также в целях отображения Вашего персонализированного содержания в ходе Ваших последующих посещений нашего сайта. Эта информация также используется для статистических исследований, направленных на корректировку содержания в соответствии с предпочтениями пользователей.</p>
+                    <h5>Агрегированная информация.</h5>
+                    <p>Мы можем объединять в неидентифицируемом формате предоставляемую вами личную информацию и личную информацию, предоставляемую другими пользователями, создавая таким образом агрегированные данные. Мы планируем анализировать данные агрегированного характера в основном в целях отслеживания групповых тенденций. Мы не увязываем агрегированные данные о пользователях с информацией личного характера, поэтому агрегированные данные не могут использоваться для установления связи с вами или Вашей идентификации. Вместо фактических имен в процессе создания агрегированных данных и анализа мы будем использовать имена пользователей. В статистических целях и в целях отслеживания групповых тенденций анонимные агрегированные данные могут предоставляться другим компаниям, с которыми мы взаимодействуем.</p> 
+                    <h5>Изменения, вносимые в настоящее Заявление о конфиденциальности.</h5>
+                    <p>Мы сохраняeм за собой право время от времени вносить изменения или дополнения в настоящую Политику конфиденциальности - частично или полностью. Мы призываем Вас периодически перечитывать нашу Политику конфиденциальности с тем, чтобы быть информированными относительно того, как мы защищаем Вашу личную информацию. С последним вариантом Политики конфиденциальности можно ознакомиться путем нажатия на гипертекстовую ссылку "Политика конфиденциальности", находящуюся в нижней части домашней страницы данного сайта. Во многих случаях, при внесении изменений в Политику конфиденциальности, мы также изменяем и дату, проставленную в начале текста Политики конфиденциальности, однако других уведомлений об изменениях мы можем вам не направлять. Однако, если речь идет о существенных изменениях, мы уведомим Вас, либо разместив предварительное заметное объявление о таких изменениях, либо непосредственно направив вам уведомление по электронной почте. Продолжение использования вами данного сайта и выход на него означает Ваше согласие с такими изменениями.</p>
+                    <button type="button" class="btn modal__button modal__button_policy" data-close="">Закрыть</button>
+                </div>
+        </div>
+    </div>
+
+    <div id="modal__сonnect" class="modal">
+        <div class="modal__dialog modal__dialog_connect">
+                <button type="button" class="modal__close" data-close="">&#10006;</button>
+                <div class="modal__сonnect">
+                    <h3 class="modal__title">Оставьте заявку и мы Вам перезвоним!</h3>
+                        <input type="text" placeholder="Ваше имя*" class="modal__field modal__name" required>
+                        <input type="tel" placeholder="Ваш телефон*" class="modal__field modal__tel" id="phone" required>
+                        <input type="email" class="modal__field modal__mail" placeholder="Ваш e-mail">
+                    <button class="btn modal__button modal__button_connect" type="submit">Отправить заявку</button>
+                </div>
+        </div>
+    </div>
     
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script>
+    new WOW().init();
+    </script>
+
+    <script>
+    $(document).ready(function() {
+        $("#phone").mask("+7 (999) 999-99-99");
+    });
+    </script>
+
 </body>
 </html>
 
